@@ -1,4 +1,4 @@
-version: "3.9"
+# version: "3.9"
 services:
   app-service:
     build:
@@ -6,3 +6,4 @@ services:
   auth-service:
     build:
       context: ./auth-service # specify directory where local Dockerfile is located
+
