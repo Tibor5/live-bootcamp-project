@@ -30,7 +30,7 @@ impl TestApp {
 
     pub async fn post_signup(&self) -> reqwest::Response {
         self.http_client
-            .post(&format!("{}/plugin", &self.address))
+            .post(&format!("{}/signup", &self.address))
             .send()
             .await
             .expect("Failed to execute request.")
